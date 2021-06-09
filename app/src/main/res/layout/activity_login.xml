@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminSubActivity.LoginActivity"
+    android:background="#000000">
+    <RelativeLayout
+        android:id="@+id/inputArea"
+        android:layout_width="375dp"
+        android:layout_height="550dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="#909090"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        />
+    <LinearLayout
+        android:id="@+id/inputTextLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:textSize="35dp"
+            android:textColor="#ff0000"
+            android:text="Please input password"/>
+        <TextView
+            android:id="@+id/numberOfTry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@android:dimen/app_icon_size"
+            />
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        style="@style/Widget.Design.FloatingActionButton"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="60dp"
+        android:layout_marginRight="20dp"
+        android:onClick="resetPassword"
+        android:src="@drawable/refresh"
+        android:layout_alignParentRight="true" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        style="@style/Widget.Design.FloatingActionButton"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"
+        android:layout_marginRight="20dp"
+        android:onClick="login"
+        android:src="@drawable/okay" />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".AdminActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/topic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Administration"
+        android:textSize="@android:dimen/app_icon_size"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:background="#ff0000"
+        />
+
+    <LinearLayout
+        android:id="@+id/actionTool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_below="@+id/topic"
+        android:orientation="vertical"
+        android:padding="25dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password Setting"
+            android:textColor="#ffffff"
+            android:textSize="25dp"
+            android:onClick="passwordSetting"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Image setting"
+            android:textColor="#ffffff"
+            android:textSize="25dp"
+            android:onClick="ImageSetting"
+            />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textColor="#ffffff"
+            android:textSize="25dp"
+            android:onClick="login"
+            />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/actionTool"
+        android:text="Exit"
+        android:textSize="25dp"
+        android:layout_marginTop="300dp"
+        android:onClick="exit"/>
+
+</RelativeLayout>

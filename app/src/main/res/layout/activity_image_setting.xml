@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminSubActivity.ImageSettingActivity">
+
+    <Button
+        android:id="@+id/btnDefault"
+        android:layout_width="135dp"
+        android:layout_height="100dp"
+        android:text="Default"
+        android:textSize="20dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="50dp"
+        android:onClick="defaultPictures"
+        />
+    <Button
+        android:layout_width="135dp"
+        android:layout_height="100dp"
+        android:text="Gallery"
+        android:textSize="20dp"
+        android:layout_toRightOf="@+id/btnDefault"
+        android:layout_alignBottom="@+id/btnDefault"
+        android:layout_marginLeft="50dp"
+        android:onClick="gallery"
+        />
+</RelativeLayout>
